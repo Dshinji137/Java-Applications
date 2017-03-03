@@ -1,0 +1,15 @@
+A simple but complete client-server system based on UDP. 
+Can realize the function of user registration, de-registration, chat and receive offline message.
+
+Client: 
+1. User can register with any name by sending the name, server IP Address, server port number and his own port number.
+2. User can de-reigster by sending the name to the server.
+3. User can chat with other users without sending message to server. give ACK response when receiving others' message.
+4. If any other users send message during the period the user is offline, these message will appear on surface as soon as the user 
+log in again.
+Server:
+1. Correctly handle with the request to register or de-register.
+2. Keep informations of all users, and when there is new registration or de-registration, update users information it keeps and broadcast 
+it to all users.
+3. Correctly deal with the offline message, if a user forcefully quit, the server can quickly learn it and then update users information 
+and broadcast them to all. Send all offline message for a user who goes offline and came back again.

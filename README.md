@@ -1,3 +1,3 @@
-# Java-Applications
+Some applications, designed for solidifying background.
 
-# Some applications written in Java
+Mainly including a chatter app, a memory training app and a brick game app.
